@@ -79,31 +79,31 @@ class ExternalFortifiedB2 {
 	 * */
 	private $iodineTest;
 	/*
-	 * @Column(name="iodineCompupdate", type="varchar",length=45, nullable=true)
+	 * @Column(name="iodineCompoundUptoDate", type="varchar",length=45, nullable=true)
 	 * */
-	private $iodineCompupdate;
+	private $iodineCompoundUptoDate;
 	/*
-	 * @Column(name="coaperLot", type="varchar",length=45, nullable=true)
+	 * @Column(name="COAPerLot", type="varchar",length=45, nullable=true)
 	 * */
-	private $coaperLot;
+	private $COAPerLot;
 	/*
 	 * @Column(name="iodineStorageAdequate", type="varchar",length=45, nullable=true)
 	 * */
 	private $iodineStorageAdequate;
 	/*
-	 * @Column(name="fifoSystem", type="varchar",length=45, nullable=true)
+	 * @Column(name="FIFOSystem", type="varchar",length=45, nullable=true)
 	 * */
-	private $fifoSystem;
+	private $FIFOSystem;
 	/*
-	 * @Column(name="iodineCompHandling", type="varchar",length=45, nullable=true)
+	 * @Column(name="iodineCompoundHandling", type="varchar",length=45, nullable=true)
 	 * */
-	private $iodineCompHandling;
+	private $iodineCompoundHandling;
 	/*
 	 * @Column(name="premixPreparation", type="varchar",length=10, nullable=true)
 	 * */
 	private $premixPreparation;
 	/*
-	 * @Column(name="prmixStorageHandling", type="varchar",length=45, nullable=true)
+	 * @Column(name="premixStorageHandling", type="varchar",length=45, nullable=true)
 	 * */
 	private $premixStorageHandling;
 	/*
@@ -151,13 +151,13 @@ class ExternalFortifiedB2 {
 	 * */
 	private $last30SamplesAvailable;
 	/*
-	 * @Column(name="labellingSpecifications", type="tinyint",length=1, nullable=true)
+	 * @Column(name="labelingSpecifications", type="tinyint",length=1, nullable=true)
 	 * */
 	private $labelingSpecifications;
 	/*
-	 * @Column(name="fortifiedSaltStorageAdequate", type="varchar",length=45, nullable=true)
+	 * @Column(name="fortifiedSaltStoredAdequate", type="varchar",length=45, nullable=true)
 	 * */
-	private $fortifiedSaltStorageAdequate;
+	private $fortifiedSaltStoredAdequate;
 	/*
 	 * @Column(name="recommendations", type="varchar",length=45, nullable=true)
 	 * */
@@ -233,7 +233,7 @@ class ExternalFortifiedB2 {
 	}
 
 	public function getManufacturerCompName() {
-		return $this -> manufacturerCopName;
+		return $this -> manufacturerCompName;
 	}
 
 	public function setManufacturerCompName($manufacturerCompName) { $this -> manufacturerCompName = $manufacturerCompName;
@@ -330,25 +330,18 @@ class ExternalFortifiedB2 {
 	public function setIodineTest($iodineTest) { $this -> iodineTest = $iodineTest;
 	}
 
-	public function getIodineTest() {
-		return $this -> iodineTest;
+	public function getIodineCompoundUptoDate() {
+		return $this -> iodineCompoundUptoDate;
 	}
 
-	public function setIodineTest($iodineTest) { $this -> iodineTest = $iodineTest;
+	public function setIodineCompoundUptoDate($iodineCompoundUptoDate) { $this -> iodineCompoundUptoDate = $iodineCompoundUptoDate;
 	}
 
-	public function getIodineCompupdate() {
-		return $this -> iodineCompupdate;
+	public function getCOAPerLot() {
+		return $this -> COAPerLot;
 	}
 
-	public function setIodineCompupdate($iodineCompupdate) { $this -> iodineCompupdate = $iodineCompupdate;
-	}
-
-	public function getCoaperLot() {
-		return $this -> coaperLot;
-	}
-
-	public function setCoaperLot($coaperLot) { $this -> coaperLot = $coaperLot;
+	public function setCOAPerLot($COAPerLot) { $this -> COAPerLot = $COAPerLot;
 	}
 
 	public function getIodineStorageAdequate() {
@@ -358,18 +351,18 @@ class ExternalFortifiedB2 {
 	public function setIodineStorageAdequate($iodineStorageAdequate) { $this -> iodineStorageAdequate = $iodineStorageAdequate;
 	}
 
-	public function getFifoSystem() {
-		return $this -> fifoSystem;
+	public function getFIFOSystem() {
+		return $this -> FIFOSystem;
 	}
 
-	public function setFifoSystem($fifoSystem) { $this -> fifoSystem = $fifoSystem;
+	public function setFIFOSystem($FIFOSystem) { $this -> FIFOSystem = $FIFOSystem;
 	}
 
-	public function getIodineCompHandling() {
-		return $this -> iodineCompHandling;
+	public function getIodineCompoundHandling() {
+		return $this -> iodineCompoundHandling;
 	}
 
-	public function setIodineCompHandling($iodineCompHandling) { $this -> iodineCompHandling = $iodineCompHandling;
+	public function setIodineCompoundHandling($iodineCompoundHandling) { $this -> iodineCompoundHandling = $iodineCompoundHandling;
 	}
 
 	public function getPremixPreparation() {
@@ -470,11 +463,11 @@ class ExternalFortifiedB2 {
 	public function setLabelingSpecifications($labelingSpecifications) { $this -> labelingSpecifications = $labelingSpecifications;
 	}
 
-	public function getFortifiedSaltStorageAdequate() {
-		return $this -> fortifiedSaltStorageAdequate;
+	public function getFortifiedSaltStoredAdequate() {
+		return $this -> fortifiedSaltStoredAdequate;
 	}
 
-	public function setFortifiedSaltStorageAdequate($fortifiedSaltStorageAdequate) { $this -> fortifiedSaltStorageAdequate = $fortifiedSaltStorageAdequate;
+	public function setFortifiedSaltStoredAdequate($fortifiedSaltStoredAdequate) { $this -> fortifiedSaltStoredAdequate = $fortifiedSaltStoredAdequate;
 	}
 
 	public function getRecommendations() {

@@ -47,21 +47,21 @@ class ExtIodizationB1 {
 	 * */
 	private $premixRecords;
 	/*
-	 * @Column(name="fifoSystem", type="varchar", length=45, nullable=true)
+	 * @Column(name="FIFOSystem", type="varchar", length=45, nullable=true)
 	 * */
-	private $fifoSystem;
+	private $FIFOSystem;
 	/*
-	 * @Column(name="saltVSPremix", type="varchar", length=45, nullable=true)
+	 * @Column(name="saltVsPremix", type="varchar", length=45, nullable=true)
 	 * */
-	private $saltVSPremix;
+	private $saltVsPremix;
 	/*
-	 * @Column(name="iodizedSaltUpdate", type="varchar", length=45, nullable=true)
+	 * @Column(name="iodizedSaltUpToDate", type="varchar", length=45, nullable=true)
 	 * */
-	private $iodizedSaltUpdate;
+	private $iodizedSaltUpToDate;
 	/*
-	 * @Column(name="saltPkgAdequate", type="varchar", length=45, nullable=true)
+	 * @Column(name="saltPerKgAdequate", type="varchar", length=45, nullable=true)
 	 * */
-	private $saltPkgAdequate;
+	private $saltPerKgAdequate;
 	/*
 	 * @Column(name="sampleNumber", type="varchar", length=45, nullable=true)
 	 * */
@@ -83,9 +83,13 @@ class ExtIodizationB1 {
 	 * */
 	private $nonCompliances;
 	/*
-	 * @Column(name="suggestionsForImprovement", type="varchar", length=45, nullable=true)
+	 * @Column(name="suggestionForImprovement", type="varchar", length=45, nullable=true)
 	 * */
 	private $suggestionForImprovement;
+	/*
+	 * @Column(name="receivedBy", type="varchar", length=45, nullable=true)
+	 * */
+	private $receivedBy;
 	/*
 	 * @Column(name="supervisorName", type="varchar", length=45, nullable=true)
 	 * */
@@ -98,7 +102,7 @@ class ExtIodizationB1 {
 		return $this -> transactionNumber;
 	}
 
-	public function settransactionNumber($transactionNumber) { $this -> transactionNumber = $transactionNumber;
+	public function setTransactionNumber($transactionNumber) { $this -> transactionNumber = $transactionNumber;
 	}
 
 	public function getManufacturerCompName() {
@@ -157,32 +161,32 @@ class ExtIodizationB1 {
 	public function setPremixRecords($premixRecords) { $this -> premixRecords = $premixRecords;
 	}
 
-	public function getFifoSystem() {
-		return $this -> fifoSystem;
+	public function getFIFOSystem() {
+		return $this -> FIFOSystem;
 	}
 
-	public function setFifoSystem($fifoSystem) { $this -> fifoSystem = $fifoSystem;
+	public function setFIFOSystem($FIFOSystem) { $this -> FIFOSystem = $FIFOSystem;
 	}
 
-	public function getSaltVSPremix() {
-		return $this -> saltVSPremix;
+	public function getSaltVsPremix() {
+		return $this -> saltVsPremix;
 	}
 
-	public function setSaltVSPremix($saltVSPremix) { $this -> saltVSPremix = $saltVSPremix;
+	public function setSaltVsPremix($saltVsPremix) { $this -> saltVsPremix = $saltVsPremix;
 	}
 
-	public function getIodizedSaltUpdate() {
-		return $this -> iodizedSaltUpdate;
+	public function getIodizedSaltUpToDate() {
+		return $this -> iodizedSaltUpToDate;
 	}
 
-	public function setIodizedSaltUpdate($iodizedSaltUpdate) { $this -> iodizedSaltUpdate = $iodizedSaltUpdate;
+	public function setIodizedSaltUpToDate($iodizedSaltUpToDate) { $this -> iodizedSaltUpToDate = $iodizedSaltUpToDate;
 	}
 
-	public function getSaltPkgAdequate() {
-		return $this -> saltPkgAdequate;
+	public function getSaltPerKgAdequate() {
+		return $this -> saltPerKgAdequate;
 	}
 
-	public function setSaltPkgAdequate($saltPkgAdequate) { $this -> saltPkgAdequate = $saltPkgAdequate;
+	public function setSaltPerKgAdequate($saltPerKgAdequate) { $this -> saltPerKgAdequate = $saltPerKgAdequate;
 	}
 
 	public function getSampleNumber() {
@@ -220,11 +224,17 @@ class ExtIodizationB1 {
 	public function setNonCompliances($nonCompliances) { $this -> nonCompliances = $nonCompliances;
 	}
 
-	public function getSuggestionsForImprovement() {
-		return $this -> suggestionsForImprovement;
+	public function getSuggestionForImprovement() {
+		return $this -> suggestionForImprovement;
 	}
 
-	public function setSuggestionsForImprovement($suggestionsForImprovement) { $this -> suggestionsForImprovement = $suggestionsForImprovement;
+	public function setSuggestionForImprovement($suggestionForImprovement) { $this -> suggestionForImprovement = $suggestionForImprovement;
+	}
+	public function getReceivedBy() {
+		return $this -> receivedBy;
+	}
+
+	public function setReceivedBy($receivedBy) { $this -> receivedBy = $receivedBy;
 	}
 
 	public function getSupervisorName() {
