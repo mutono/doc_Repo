@@ -20,7 +20,7 @@ class Auth extends MY_Controller {
 						->findOneBy(array('username' => $this -> input -> post('username'), 'password' => $this -> input -> post('secret')));
      
 			
-		//if ($user[0]['id'] >0) {
+		//if ($user[0]['id'] >0) {//for array based
 	    if ($user) {
 			//$user = $this->em->find('models\SystemUser',$user[0]['id']); //pass to the object
 
@@ -31,6 +31,7 @@ class Auth extends MY_Controller {
 
 			$this -> session -> set_userdata($newdata);
 			
+			//specify user access rights
 			/* Check Authority / User Level
 			 * Where:
 			 * 1. Administrator  =>  HIGHEST
